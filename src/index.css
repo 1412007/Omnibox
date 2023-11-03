@@ -202,24 +202,602 @@ header {
   transform: rotate(30deg);
 }
 
-.lorem .loremContent {
+.carousel .carouselContent {
   background-image: url("./../public/img/rectangle.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 70px 0;
 }
 
-.lorem .loremContent .title {
+.carousel .carouselContent .title {
+  background-image: url("./../public/img/rectangle_7.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.carousel .carouselContent .title h3 {
+  text-transform: uppercase;
+  color: #1e3da7;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.carousel .carouselContent .carouselItem {
+  height: 200px;
+  padding: 10px;
+}
+
+.carousel .carouselContent .carouselItem .carouselItemContent {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.carousel .carouselContent .carouselItem .carouselItemContent p {
+  color: #5c5c5c;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+.carousel .carouselContent .carouselButton {
+  margin-top: 150px;
+  margin-right: 10px;
+}
+
+.carousel .carouselContent .carouselButton .ant-btn-default {
+  box-shadow: none;
+  border-radius: 50%;
+  color: #00000054;
+  border: 2px solid #00000054;
+  height: 35px;
+  width: 35px;
+  padding: 0 4px;
+}
+
+.carousel
+  .carouselContent
+  .carouselButton
+  .ant-btn-default:not(:disabled):not(.ant-btn-disabled):active,
+.carousel
+  .carouselContent
+  .carouselButton
+  .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.test {
+  background-image: url("./../public/img/line.png"),
+    linear-gradient(
+      226.04deg,
+      #7c479f -34.39%,
+      #7c479f -34.39%,
+      #1e3da7 27.42%,
+      #221a53 102.68%
+    );
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.test .testContent .title {
+  background-image: url("./../public/img/rectangle_7.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.test .testContent .title h3 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.test .testContent .description {
+  padding: 35px 0;
+  color: white;
+}
+
+.test .testBody .testBodyLeft {
+  width: 30%;
+}
+
+.test .testBody .testBodyRight {
+  width: 70%;
+  margin-left: 80px;
+}
+
+.test .testBody .testBodyLeft .ant-carousel {
+  background-color: white;
+  padding: 20px;
+}
+
+.test .testBody .testBodyLeft .ant-carousel .slick-dots-bottom {
+  bottom: 0;
+}
+
+.test .testBody .testBodyLeft .ant-carousel .slick-dots li {
+  background-color: #c7c7c7;
+  border-radius: 5px;
+}
+
+.test .testBody .testBodyLeft .ant-carousel .slick-dots li.slick-active button {
+  background-color: #1e3da7;
+}
+
+.test .testBody .testBodyLeft .carouselItem {
+  height: fit-content;
+  padding: 10px;
+}
+
+.test .testBody .testBodyLeft .carouselItem .carouselItemContent {
+  border: 1px solid white;
+  border-radius: 10px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px 20px;
+}
+
+.test .testBody .testBodyLeft .carouselItem .carouselItemContent .blueCircle {
+  border-radius: 50%;
+  background-color: #1e3da7;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.test .testBody .testBodyLeft .carouselItem .carouselItemContent .imgPerson {
+  position: absolute;
+  top: -25px;
+}
+
+.test
+  .testBody
+  .testBodyLeft
+  .carouselItem
+  .carouselItemContent
+  .name
+  p:first-child {
+  background: linear-gradient(225deg, #ff642e 8.68%, #e1216a 89.88%);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.test
+  .testBody
+  .testBodyLeft
+  .carouselItem
+  .carouselItemContent
+  .name
+  p:last-child {
+  color: #221a53;
+}
+
+.test .testBody .testBodyLeft .carouselItem .carouselItemContent .description {
+  color: #221a53;
+  text-align: justify;
+  padding: 0;
+}
+.test
+  .testBody
+  .testBodyLeft
+  .carouselItem
+  .carouselItemContent
+  .description
+  p {
+  border-top: 2px solid #565656;
+}
+
+.test .testBody .testBodyRight .carouselItemRight .carouselItemRightContent {
+  padding: 50px 0;
+}
+
+.test .testBody .testBodyRight .ant-carousel .slick-dots li {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.test
+  .testBody
+  .testBodyRight
+  .ant-carousel
+  .slick-dots
+  li.slick-active
+  button {
+  background-color: #ff642e;
+}
+
+.test .testContent button {
+  border: 1px solid #ff642e;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #ff642e;
+  padding: 15px 100px;
+  color: white;
+  font-weight: 500;
+}
+
+.form {
+  background-color: #f8f9fe;
+  padding-top: 30px;
+  position: relative;
+}
+
+.form::after {
+  content: "";
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  background-color: #212063;
+  z-index: 1;
+}
+
+.form .formContent {
+  height: fit-content;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: sticky;
+  z-index: 2;
+}
+
+.form .formContent .leftContent {
+  width: 40%;
+  border-right: 2px solid #f2f2f2;
+  padding: 30px 50px;
+}
+
+.form .formContent .leftContent h3 {
+  font-size: 30px;
+  color: #262626;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+}
+
+.form .formContent .leftContent p {
+  color: #787878;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.form .formContent .leftContent button {
+  border: 1px solid #ff642e;
+  border-radius: 5px;
+  background: #ff642e;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.form .formContent .leftContent .inputField {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form .formContent .leftContent .inputMessage {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form .formContent .leftContent .field {
+  position: relative;
+}
+
+.form .formContent .leftContent .floatingLabel {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #9ca3af;
+  border: 1px solid white;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.form .formContent .leftContent input:focus-visible + .floatingLabel,
+.form .formContent .leftContent textarea:focus-visible + .floatingLabel {
+  top: -12px;
+  color: black;
+  z-index: 1;
+}
+
+.form .formContent .rightContent {
+  width: 60%;
+  padding: 30px 50px;
+}
+
+.form .formContent .rightContent h2 {
+  font-size: 50px;
+  color: #262626;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  background-image: url("./../public/img/fill.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: fill;
+  margin-bottom: 15px;
+}
+
+.form .formContent .rightContent p.description {
+  color: #221a53;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.form .formContent .rightContent p.contact {
+  color: #8b8b8b;
+}
+
+.form .formContent .rightContent p.contact span {
+  font-size: 24px;
+  color: #0e0e0e;
+}
+
+/* Portfolio */
+.portfolioBanner {
+  background: url("./../public/img/portfolio_banner.png") center center
+    no-repeat;
+  background-size: cover;
+  height: 570px;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolioBanner::after {
+  content: "";
+  height: 100%;
+  width: 554px;
+  display: inline-block;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background-image: url("./../public/img/shape.png");
+  background-repeat: no-repeat;
+}
+
+.portfolioBanner .bannerContent {
+  padding: 100px 60px;
+  background-image: url("./../public/img/ellipse_147.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left center;
+  height: 450px;
+  position: absolute;
+  top: 50px;
+  width: 40%;
+}
+
+.portfolioBanner .bannerContent h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.portfolioBanner .bannerContent p {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.portfolioBanner .bannerContent button {
+  border: 1px solid #ff642e;
+  border-radius: 30px;
+  background: #ff642e;
+  padding: 10px 30px;
+  color: white;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.portfolioLoremCarousel .title {
   background-image: url("./../public/img/rectangle_7.png");
   background-repeat: no-repeat;
   background-position: bottom;
   text-align: center;
 }
 
-.lorem .loremContent .title h3 {
+.portfolioLoremCarousel .title h3 {
   text-transform: uppercase;
   color: #1e3da7;
   font-size: 30px;
   font-weight: 600;
   padding-bottom: 10px;
+}
+
+.portfolioLoremCarousel .carouselItem {
+  text-align: center;
+}
+
+.portfolioLoremCarousel .carouselItem .carouselItemContent button {
+  padding: 10px 30px;
+  border: 1px solid #e0e3eb;
+  border-radius: 30px;
+  color: #888b97;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.portfolioLoremCarousel .carouselItem .carouselItemContent button:hover {
+  border: 1px solid #ffd8b4;
+  font-weight: 500;
+  color: #ff642e;
+  background-color: #ffd8b4;
+}
+
+.portfolioLoremCarousel .ant-btn-default {
+  box-shadow: none;
+  color: #00000054;
+  border: none;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.portfolioLoremCarousel
+  .ant-btn-default:not(:disabled):not(.ant-btn-disabled):active,
+.portfolioLoremCarousel
+  .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  color: #000000;
+}
+
+.portfolioLoremCarousel .content {
+  margin-top: 60px;
+}
+
+.portfolioLoremCarousel .content .contentLeft {
+  width: 60%;
+  color: #221a53;
+  padding: 10px 30px 10px 0;
+}
+
+.portfolioLoremCarousel .content .contentLeft .subTitle {
+  background-image: url("./../public/img/portfolioLine.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.portfolioLoremCarousel .content .contentLeft h4 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding-left: 85px;
+}
+
+.portfolioLoremCarousel .content .contentLeft .list li img {
+  display: inline-block;
+}
+
+.portfolioLoremCarousel .content .contentLeft .list li p {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.portfolioLoremCarousel .content .contentRight {
+  width: 40%;
+}
+
+.portfolioImage {
+  height: fit-content;
+}
+
+.portfolioImage img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.portfolioNumber .title {
+  background-image: url("./../public/img/rectangle_7.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+}
+
+.portfolioNumber .title h3 {
+  text-transform: uppercase;
+  color: #1e3da7;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.portfolioNumber .content .item {
+  padding: 10px;
+  text-align: center;
+}
+
+.portfolioNumber .content .item .number {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.portfolioNumber .content .item h3 {
+  font-size: 24px;
+  color: #1f2e35;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.portfolioNumber .content .item p:last-child {
+  color: #475e69;
+  font-size: 18px;
+}
+
+.portfolioIcon {
+  background-image: url("./../public/img/Group_677.png"),
+    linear-gradient(
+      226.04deg,
+      #7c479f -34.39%,
+      #7c479f -34.39%,
+      #1e3da7 27.42%,
+      #221a53 102.68%
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolioIcon .content {
+  padding: 80px 0;
+}
+
+.portfolioIcon .title {
+  background-image: url("./../public/img/rectangle_7.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+}
+
+.portfolioIcon .title h3 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.portfolioIcon .item .subItem .subItemContent {
+  padding: 0 30px;
+}
+
+.portfolioIcon .item .subItem img {
+  margin: 0 auto;
+}
+
+.portfolioIcon .item .subItem h4 {
+  margin: 30px 0 15px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: #ff642e;
+}
+
+.portfolioIcon .item .subItem p {
+  text-align: justify;
+  font-size: 16px;
+  color: #ffffff;
 }

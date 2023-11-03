@@ -30,14 +30,26 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <a href="#" className="nav-link">
-                  Company
-                </a>
+                <NavLink
+                  to={"/portfolio1"}
+                  className={({ isActive }) =>
+                    isActive ? "active" : "nav-link"
+                  }
+                  aria-current="page"
+                >
+                  Portfolio 1
+                </NavLink>
               </li>
               <li>
-                <a href="#" className="nav-link">
-                  Marketplace
-                </a>
+                <NavLink
+                  to={"/portfolio2"}
+                  className={({ isActive }) =>
+                    isActive ? "active" : "nav-link"
+                  }
+                  aria-current="page"
+                >
+                  Portfolio 2
+                </NavLink>
               </li>
               <li>
                 <a href="#" className="nav-link">

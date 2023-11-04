@@ -52,19 +52,26 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <a href="#" className="nav-link">
-                  Features
-                </a>
+                <NavLink
+                  to={"/price"}
+                  className={({ isActive }) =>
+                    isActive ? "active" : "nav-link"
+                  }
+                  aria-current="page"
+                >
+                  Price
+                </NavLink>
               </li>
               <li>
-                <a href="#" className="nav-link">
-                  Team
-                </a>
-              </li>
-              <li>
-                <a href="#" className="nav-link">
-                  Contact
-                </a>
+                <NavLink
+                  to={"/contact"}
+                  className={({ isActive }) =>
+                    isActive ? "active" : "nav-link"
+                  }
+                  aria-current="page"
+                >
+                  Contact Us
+                </NavLink>
               </li>
             </ul>
           </div>

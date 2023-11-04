@@ -2,7 +2,7 @@ import React from "react";
 
 const PortfolioImage = () => {
   return (
-    <div className="portfolioImage grid grid-cols-[28.65%_repeat(2,_minmax(0,_1fr))] gap-2.5 mx-auto max-w-screen-xl">
+    <div className="portfolioImage grid grid-cols-[28.65%_repeat(2,_minmax(0,_1fr))] gap-2.5 mx-auto max-w-screen-xl pb-16">
       <div>
         <img
           src={"./img/landingnamia_anh30.png"}

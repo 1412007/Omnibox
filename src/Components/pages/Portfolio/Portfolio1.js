@@ -4,6 +4,7 @@ import PortfolioLorem from "../../PortfolioLorem/PortfolioLorem";
 import PortfolioImage from "../../PortfolioImage/PortfolioImage";
 import PortfolioNumber from "../../PortfolioNumber/PortfolioNumber";
 import PortfolioIcon from "../../PortfolioIcon/PortfolioIcon";
+import PortfolioArticle from "../../PortfolioArticle/PortfolioArticle";
 
 const Portfolio1 = () => {
   return (
@@ -13,6 +14,9 @@ const Portfolio1 = () => {
       <PortfolioIcon />
       <PortfolioLorem />
       <PortfolioImage />
+      <div className="portfolio1">
+        <PortfolioArticle />
+      </div>
     </div>
   );
 };

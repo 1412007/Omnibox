@@ -57,7 +57,7 @@ const HomeForm = () => {
               amet consectetuer lorem ipsum dolor ngồi amet consectetuer lorem
               ipsum dolor{" "}
             </p>
-            <p className="contact">
+            <p className="contactNumber">
               Feel free to contact us here
               <br />{" "}
               <span>

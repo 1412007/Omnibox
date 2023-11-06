@@ -2,8 +2,8 @@ import React from "react";
 
 const HomeBanner = () => {
   return (
-    <div className="banner flex">
-      <div className="bannerLeft">
+    <div className="banner">
+      <div className="mx-auto max-w-screen-xl">
         <div className="content">
           <h2>Lorem ipsum dolor amet consectetuer. Lorem</h2>
           <p>
@@ -14,7 +14,6 @@ const HomeBanner = () => {
           <button>Contact us</button>
         </div>
       </div>
-      <img src={"./img/banner.png"} />
     </div>
   );
 };

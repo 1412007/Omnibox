@@ -39,17 +39,12 @@ header {
   position: relative;
 }
 
-.banner .bannerLeft {
+.banner .content {
   padding: 80px 0;
-  width: fit-content;
-}
-
-.banner .bannerLeft .content {
   width: 50%;
-  margin: 0 auto;
 }
 
-.banner .bannerLeft h2 {
+.banner .content h2 {
   font-weight: 900;
   font-size: 50px;
   background-image: url("./../public/img/background_text.png");
@@ -58,13 +53,13 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
-.banner .bannerLeft p {
+.banner .content p {
   padding: 30px 0;
   color: #221a53;
   font-size: 20px;
 }
 
-.banner .bannerLeft button {
+.banner .content button {
   border: 1px solid #ff642e;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -72,9 +67,21 @@ header {
   padding: 15px 50px;
   color: white;
   font-weight: 500;
+  transition: all 0.3s;
 }
 
-.banner img {
+.banner .content button:hover {
+  background: white;
+  color: #ff642e;
+}
+
+.banner::after {
+  content: "";
+  width: 786px;
+  height: 701px;
+  display: inline-block;
+  background: url("./../public/img/banner.png") no-repeat right bottom;
+  background-size: cover;
   position: absolute;
   top: -93px;
   right: 0;
@@ -141,6 +148,19 @@ header {
   padding: 15px 50px;
   font-weight: 500;
   width: 100%;
+  transition: all 0.3s;
+}
+
+.aboutUs .aboutUsContent .content .aboutUsItem .aboutUsItemContent button:hover,
+.aboutUs
+  .aboutUsContent
+  .content
+  .aboutUsItem:last-child
+  .aboutUsItemContent
+  button:hover {
+  border: 2px solid #fa7258;
+  background-color: #fa7258;
+  color: white;
 }
 
 .aboutUs
@@ -151,6 +171,7 @@ header {
   button {
   background-color: white;
   color: #fa7258;
+  transition: all 0.3s;
 }
 
 .aboutUs .aboutUsContent .content .logo {
@@ -426,6 +447,12 @@ header {
   padding: 15px 100px;
   color: white;
   font-weight: 500;
+  transition: all 0.3s;
+}
+
+.test .testContent button:hover {
+  background: white;
+  color: #ff642e;
 }
 
 .form {
@@ -484,6 +511,13 @@ header {
   width: 100%;
   text-transform: uppercase;
   padding: 15px 0;
+  transition: all 0.3s;
+}
+
+.form .formContent .leftContent button:hover {
+  border: 1px solid #ff642e;
+  background: white;
+  color: #ff642e;
 }
 
 .form .formContent .leftContent .inputField {
@@ -548,11 +582,11 @@ header {
   margin-bottom: 15px;
 }
 
-.form .formContent .rightContent p.contact {
+.form .formContent .rightContent p.contactNumber {
   color: #8b8b8b;
 }
 
-.form .formContent .rightContent p.contact span {
+.form .formContent .rightContent p.contactNumber span {
   font-size: 24px;
   color: #0e0e0e;
 }
@@ -611,6 +645,12 @@ header {
   color: white;
   font-weight: 500;
   margin-top: 15px;
+  transition: all 0.3s;
+}
+
+.portfolioBanner .bannerContent button:hover {
+  background: white;
+  color: #ff642e;
 }
 
 .portfolioLoremCarousel .title {
@@ -813,6 +853,11 @@ header {
   font-size: 20px;
   text-align: left;
   margin-bottom: 40px;
+  transition: all 0.3s;
+}
+
+.portfolioArticle button.lorem:hover {
+  background-color: rgb(236, 235, 235);
 }
 
 .portfolioArticle button.lorem svg {
@@ -862,6 +907,11 @@ header {
   font-size: 16px;
   color: #ff642e;
   text-align: center;
+  transition: all 0.3s;
+}
+
+.portfolioArticle .carouselItem .carouselItemContent .text button:hover {
+  background-color: white;
 }
 
 .portfolio {
@@ -921,6 +971,8 @@ header {
   color: white;
   margin: 0 auto;
   width: 60%;
+  position: sticky;
+  z-index: 2;
 }
 
 .priceBanner .priceBannerContent .leftContent h2 {
@@ -937,6 +989,13 @@ header {
   color: #ff642e;
   font-weight: 500;
   margin-top: 15px;
+  transition: all 0.3s;
+}
+
+.priceBanner .priceBannerContent .leftContent button:hover {
+  background: #ff642e;
+  border: 1px solid #ff642e;
+  color: white;
 }
 
 .priceBanner .rightContent {
@@ -1029,6 +1088,12 @@ header {
   font-weight: 600;
   padding: 10px 30px;
   border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.priceArticle .articleItem .itemContent button:hover {
+  background-color: white;
+  color: #ff642e;
 }
 
 .priceArticle .articleItem:nth-child(2) .itemContent {
@@ -1042,6 +1107,12 @@ header {
 .priceArticle .articleItem:nth-child(2) .itemContent button {
   background-color: white;
   color: #ff642e;
+  transition: all 0.3s;
+}
+
+.priceArticle .articleItem:nth-child(2) .itemContent button:hover {
+  background-color: #ff642e;
+  color: white;
 }
 
 .price .title {
@@ -1096,6 +1167,13 @@ header {
   font-weight: 700px;
   font-size: 20px;
   margin-top: 20px;
+  transition: all 0.3s;
+}
+
+.contactForm button:hover {
+  background: white;
+  border: 1px solid white;
+  color: #ff642e;
 }
 
 .contactForm .inputField {
